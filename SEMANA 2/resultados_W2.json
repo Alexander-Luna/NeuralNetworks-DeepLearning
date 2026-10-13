@@ -1,0 +1,262 @@
+{
+ "parametros": {
+  "SEMILLA": 42,
+  "SEMILLAS_EXTRA": [
+   1,
+   2
+  ],
+  "VARIANTES_POR_CLASE": 80,
+  "FRAC_VAL": 0.15,
+  "FRAC_TEST": 0.15,
+  "MAXLEN": 40,
+  "EMB": 64,
+  "GRU": 96,
+  "D_MODELO": 64,
+  "CABEZAS": 4,
+  "FF": 128,
+  "BLOQUES": 2,
+  "DROPOUT": 0.3,
+  "LR": 0.001,
+  "BATCH": 128,
+  "EPOCAS": 60,
+  "PACIENCIA": 6,
+  "UMBRAL_CONF": 0.5
+ },
+ "versiones": {
+  "python": "3.13.16",
+  "tensorflow": "2.21.0",
+  "keras": "3.15.1",
+  "numpy": "2.5.3",
+  "pandas": "3.0.5"
+ },
+ "datos": {
+  "cantones_oficiales": 221,
+  "clases": 219,
+  "alias_cabecera": 58,
+  "textos_crudos_distintos": 1078,
+  "textos_normalizados_distintos": 701,
+  "registros_con_canton": 6336984,
+  "dic_filas": 50,
+  "dic_cadenas_distintas": 38,
+  "dic_registros": 19104,
+  "dic_pct_registros": 0.3
+ },
+ "ficha": {
+  "corpus": 11721,
+  "train": 8204,
+  "val": 1758,
+  "test_sintetico": 1759,
+  "test_real": 38,
+  "vocabulario": 39,
+  "maxlen": 40,
+  "long_media": 11.7,
+  "long_p95": 25,
+  "long_max": 52,
+  "truncados_pct": 0.21,
+  "clases": 219
+ },
+ "baseline": {
+  "sintetico": {
+   "acc": 0.9403069926094372,
+   "precision": 0.9718871865327536,
+   "recall": 0.9276149902862232,
+   "f1": 0.9420947424531492
+  },
+  "real": {
+   "acc": 1.0,
+   "aciertos": 38,
+   "n": 38,
+   "acc_ponderada": 1.0
+  }
+ },
+ "parametros_modelo": {
+  "BiGRU": 368539,
+  "Transformer": 142363
+ },
+ "entrenamiento": {
+  "BiGRU": {
+   "epocas": 44,
+   "mejor_epoca": 38,
+   "segundos": 803,
+   "loss_train": 0.017,
+   "loss_val": 0.1591,
+   "acc_train": 0.9968,
+   "acc_val": 0.9602,
+   "lr_final": 6.25000029685907e-05
+  },
+  "Transformer": {
+   "epocas": 46,
+   "mejor_epoca": 40,
+   "segundos": 412,
+   "loss_train": 0.1048,
+   "loss_val": 0.1379,
+   "acc_train": 0.9705,
+   "acc_val": 0.9613,
+   "lr_final": 1.5625000742147677e-05
+  }
+ },
+ "principal": {
+  "BiGRU": {
+   "sintetico": {
+    "acc": 0.9687322342239909,
+    "precision": 0.9681319695018324,
+    "recall": 0.9671928781517822,
+    "f1": 0.9648239339281102
+   },
+   "real": {
+    "acc": 1.0,
+    "aciertos": 38,
+    "n": 38,
+    "acc_ponderada": 1.0
+   }
+  },
+  "Transformer": {
+   "sintetico": {
+    "acc": 0.9596361569073337,
+    "precision": 0.9609491979354993,
+    "recall": 0.9543180310303597,
+    "f1": 0.9536883279650847
+   },
+   "real": {
+    "acc": 0.9473684210526315,
+    "aciertos": 36,
+    "n": 38,
+    "acc_ponderada": 0.9998429648241206
+   }
+  }
+ },
+ "mejor_modelo": "BiGRU",
+ "acc_por_longitud": {
+  "≤7": {
+   "acc": 0.936,
+   "n": 468
+  },
+  "8-15": {
+   "acc": 0.975,
+   "n": 909
+  },
+  "16-25": {
+   "acc": 0.993,
+   "n": 285
+  },
+  "≥26": {
+   "acc": 1.0,
+   "n": 97
+  }
+ },
+ "errores": {
+  "modelo": "BiGRU",
+  "n_errores": 55,
+  "n_test": 1759,
+  "pct_errores_textos_cortos": 54.5,
+  "pct_textos_cortos_en_test": 26.6,
+  "acc_textos_cortos": 0.936,
+  "acc_textos_largos": 0.981,
+  "top_pares": [
+   {
+    "real": "GUAYAQUIL",
+    "predicho": "NANGARITZA",
+    "n": 2
+   },
+   {
+    "real": "CUYABENO",
+    "predicho": "CHAMBO",
+    "n": 2
+   },
+   {
+    "real": "ESPEJO",
+    "predicho": "SANTA ISABEL",
+    "n": 1
+   },
+   {
+    "real": "CHINCHIPE",
+    "predicho": "BABA",
+    "n": 1
+   },
+   {
+    "real": "MANTA",
+    "predicho": "CUMANDA",
+    "n": 1
+   }
+  ]
+ },
+ "real_errores": {
+  "BiGRU": [],
+  "Transformer": [
+   {
+    "texto": "A BAQUERIZO MORENO",
+    "esperado": "ALFREDO BAQUERIZO MORENO",
+    "predicho": "SAN CRISTOBAL",
+    "conf": 0.99
+   },
+   {
+    "texto": "ISIBRO AYORA",
+    "esperado": "ISIDRO AYORA",
+    "predicho": "SIMON BOLIVAR",
+    "conf": 0.47
+   }
+  ]
+ },
+ "sin_etiqueta": {
+  "textos": 85,
+  "registros": 102989,
+  "conf_alta": 73,
+  "coinciden": 26,
+  "ejemplos": [
+   {
+    "texto": "ORELLANA",
+    "registros": 39143,
+    "propuesta": "QUILANGA",
+    "conf": 0.30000001192092896
+   },
+   {
+    "texto": "QUITO NOROCCIDENTE",
+    "registros": 27386,
+    "propuesta": "ROCAFUERTE",
+    "conf": 0.5299999713897705
+   },
+   {
+    "texto": "GENERAL ELIZALDE BUCAY",
+    "registros": 8424,
+    "propuesta": "COLTA",
+    "conf": 0.25999999046325684
+   },
+   {
+    "texto": "ALFREDO BAQUERIZO",
+    "registros": 6624,
+    "propuesta": "ALFREDO BAQUERIZO MORENO",
+    "conf": 0.9900000095367432
+   },
+   {
+    "texto": "EMPALME",
+    "registros": 6350,
+    "propuesta": "EL EMPALME",
+    "conf": 1.0
+   },
+   {
+    "texto": "SANTO DOMINGO DE LOS TSACHILAS",
+    "registros": 2694,
+    "propuesta": "CASCALES",
+    "conf": 0.5299999713897705
+   },
+   {
+    "texto": "EXTRANJERO",
+    "registros": 2478,
+    "propuesta": "TISALEO",
+    "conf": 0.6800000071525574
+   },
+   {
+    "texto": "CANTON QUINSALOMA",
+    "registros": 2220,
+    "propuesta": "QUINSALOMA",
+    "conf": 1.0
+   }
+  ]
+ },
+ "umbral": {
+  "umbral": 0.5,
+  "cobertura_sintetico": 0.99,
+  "acc_sobre_umbral": 0.974,
+  "acc_bajo_umbral": 0.471
+ }
+}
