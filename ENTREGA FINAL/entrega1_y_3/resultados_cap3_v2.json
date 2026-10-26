@@ -1,0 +1,511 @@
+{
+ "parametros": {
+  "K": 30,
+  "CONTAM": 0.05,
+  "N_ARBOLES": 300,
+  "LOF_VECINOS": 20,
+  "SVM_NU": 0.05,
+  "SEMILLA": 42,
+  "COB_INDICADOR": 0.4,
+  "COB_FILA": 0.3,
+  "N_SEMILLAS": 30,
+  "N_SUBMUESTRAS": 30,
+  "FRAC_SUB": 0.8,
+  "JACCARD_MIN": 0.7,
+  "CORR_MAX": 0.3,
+  "N_REP_MASCARA": 10,
+  "FRAC_MASCARA": 0.1,
+  "N_REP_SPLIT": 20,
+  "FRAC_TEST": 0.2
+ },
+ "versiones": {
+  "scikit-learn": "1.9.1",
+  "numpy": "2.5.3",
+  "pandas": "3.0.5"
+ },
+ "matriz": {
+  "filas": 1284,
+  "indicadores": 4,
+  "cantones": 218,
+  "provincias": 24,
+  "densidad_pct": 79.4,
+  "faltantes": 1056
+ },
+ "imputacion": {
+  "Media de la columna": {
+   "rmse": 1.335,
+   "sd": 0.063
+  },
+  "Mediana de la columna": {
+   "rmse": 1.346,
+   "sd": 0.066
+  },
+  "KNN k=1": {
+   "rmse": 1.827,
+   "sd": 0.155
+  },
+  "KNN k=3": {
+   "rmse": 1.487,
+   "sd": 0.08
+  },
+  "KNN k=5": {
+   "rmse": 1.414,
+   "sd": 0.079
+  },
+  "KNN k=10": {
+   "rmse": 1.335,
+   "sd": 0.066
+  },
+  "KNN k=20": {
+   "rmse": 1.299,
+   "sd": 0.055
+  },
+  "KNN k=50": {
+   "rmse": 1.245,
+   "sd": 0.063
+  },
+  "KNN k=100": {
+   "rmse": 1.235,
+   "sd": 0.067
+  },
+  "KNN k=200": {
+   "rmse": 1.245,
+   "sd": 0.064
+  },
+  "Historia del cantón (mediana otros años)": {
+   "rmse": 0.737,
+   "sd": 0.024
+  }
+ },
+ "consenso": {
+  "knn5": 46,
+  "historia": 56,
+  "votos": {
+   "0": 1171,
+   "1": 57,
+   "2": 32,
+   "3": 24
+  },
+  "jaccard_consenso": 0.417,
+  "jaccard_top30": 0.538
+ },
+ "correlaciones": {
+  "Matriz original con ceros (28 ind., 1.768 filas) · Isolation Forest": 0.817,
+  "M_V con KNN k=5 · Ensamble": -0.075,
+  "M_V historia del cantón · Isolation Forest": -0.183,
+  "M_V historia del cantón · LOF": -0.093,
+  "M_V historia del cantón · One-Class SVM": -0.086,
+  "M_V historia del cantón · Ensamble": -0.147,
+  "M_V historia del cantón · Baseline max|z|": -0.085,
+  "M_P (presencia) · Isolation Forest": -0.663
+ },
+ "criterio_corr_cumple": true,
+ "estabilidad": {
+  "Ensamble · 30 semillas": {
+   "medio": 0.996,
+   "minimo": 0.935
+  },
+  "Isolation Forest · 30 submuestras 80 %": {
+   "medio": 0.85,
+   "minimo": 0.704
+  },
+  "LOF · 30 submuestras 80 %": {
+   "medio": 0.833,
+   "minimo": 0.655
+  },
+  "One-Class SVM · 30 submuestras 80 %": {
+   "medio": 0.646,
+   "minimo": 0.455
+  },
+  "Ensamble · 30 submuestras 80 %": {
+   "medio": 0.818,
+   "minimo": 0.679
+  }
+ },
+ "criterio_estabilidad_cumple": true,
+ "r6": [
+  {
+   "umbral": "x3",
+   "filas_R6": 661,
+   "prevalencia_pct": 51.48,
+   "recall5_ensamble": 0.044,
+   "recall5_baseline": 0.044
+  },
+  {
+   "umbral": "x5",
+   "filas_R6": 206,
+   "prevalencia_pct": 16.04,
+   "recall5_ensamble": 0.049,
+   "recall5_baseline": 0.029
+  },
+  {
+   "umbral": "x10",
+   "filas_R6": 4,
+   "prevalencia_pct": 0.31,
+   "recall5_ensamble": 0.5,
+   "recall5_baseline": 0.0
+  }
+ ],
+ "inyeccion": [
+  {
+   "tipo": "A",
+   "metodo": "Isolation Forest",
+   "recall5": 0.64,
+   "recall5_sd": 0.023,
+   "p30": 0.39
+  },
+  {
+   "tipo": "A",
+   "metodo": "LOF",
+   "recall5": 0.772,
+   "recall5_sd": 0.088,
+   "p30": 0.748
+  },
+  {
+   "tipo": "A",
+   "metodo": "One-Class SVM",
+   "recall5": 0.525,
+   "recall5_sd": 0.04,
+   "p30": 0.637
+  },
+  {
+   "tipo": "A",
+   "metodo": "Ensamble",
+   "recall5": 0.682,
+   "recall5_sd": 0.04,
+   "p30": 0.648
+  },
+  {
+   "tipo": "A",
+   "metodo": "Baseline max|z|",
+   "recall5": 0.882,
+   "recall5_sd": 0.017,
+   "p30": 0.675
+  },
+  {
+   "tipo": "B",
+   "metodo": "Isolation Forest",
+   "recall5": 0.622,
+   "recall5_sd": 0.028,
+   "p30": 0.263
+  },
+  {
+   "tipo": "B",
+   "metodo": "LOF",
+   "recall5": 0.674,
+   "recall5_sd": 0.029,
+   "p30": 0.663
+  },
+  {
+   "tipo": "B",
+   "metodo": "One-Class SVM",
+   "recall5": 0.603,
+   "recall5_sd": 0.033,
+   "p30": 0.583
+  },
+  {
+   "tipo": "B",
+   "metodo": "Ensamble",
+   "recall5": 0.665,
+   "recall5_sd": 0.025,
+   "p30": 0.54
+  },
+  {
+   "tipo": "B",
+   "metodo": "Baseline max|z|",
+   "recall5": 0.036,
+   "recall5_sd": 0.019,
+   "p30": 0.042
+  }
+ ],
+ "generalizacion": {
+  "Filas al azar | MLP": {
+   "pos_test": [
+    14.25,
+    4.789
+   ],
+   "precision": [
+    0.65,
+    0.175
+   ],
+   "recall": [
+    0.713,
+    0.189
+   ],
+   "f1": [
+    0.664,
+    0.144
+   ],
+   "pr_auc": [
+    0.791,
+    0.153
+   ],
+   "folds_validos": 20
+  },
+  "Filas al azar | MLP + L2 (α=0,1)": {
+   "pos_test": [
+    14.25,
+    4.789
+   ],
+   "precision": [
+    0.593,
+    0.118
+   ],
+   "recall": [
+    0.754,
+    0.152
+   ],
+   "f1": [
+    0.653,
+    0.102
+   ],
+   "pr_auc": [
+    0.784,
+    0.135
+   ],
+   "folds_validos": 20
+  },
+  "Filas al azar | Regresión logística": {
+   "pos_test": [
+    14.25,
+    4.789
+   ],
+   "precision": [
+    0.187,
+    0.049
+   ],
+   "recall": [
+    0.686,
+    0.092
+   ],
+   "f1": [
+    0.291,
+    0.062
+   ],
+   "pr_auc": [
+    0.527,
+    0.134
+   ],
+   "folds_validos": 20
+  },
+  "Cantones nuevos | MLP": {
+   "pos_test": [
+    16.4,
+    8.574
+   ],
+   "precision": [
+    0.638,
+    0.221
+   ],
+   "recall": [
+    0.646,
+    0.236
+   ],
+   "f1": [
+    0.628,
+    0.204
+   ],
+   "pr_auc": [
+    0.729,
+    0.226
+   ],
+   "folds_validos": 20
+  },
+  "Cantones nuevos | MLP + L2 (α=0,1)": {
+   "pos_test": [
+    16.4,
+    8.574
+   ],
+   "precision": [
+    0.608,
+    0.192
+   ],
+   "recall": [
+    0.681,
+    0.238
+   ],
+   "f1": [
+    0.627,
+    0.189
+   ],
+   "pr_auc": [
+    0.723,
+    0.227
+   ],
+   "folds_validos": 20
+  },
+  "Cantones nuevos | Regresión logística": {
+   "pos_test": [
+    16.4,
+    8.574
+   ],
+   "precision": [
+    0.172,
+    0.109
+   ],
+   "recall": [
+    0.579,
+    0.269
+   ],
+   "f1": [
+    0.254,
+    0.15
+   ],
+   "pr_auc": [
+    0.401,
+    0.277
+   ],
+   "folds_validos": 20
+  },
+  "Provincias nuevas | MLP": {
+   "pos_test": [
+    15.85,
+    11.591
+   ],
+   "precision": [
+    0.504,
+    0.211
+   ],
+   "recall": [
+    0.651,
+    0.242
+   ],
+   "f1": [
+    0.547,
+    0.211
+   ],
+   "pr_auc": [
+    0.612,
+    0.246
+   ],
+   "folds_validos": 20
+  },
+  "Provincias nuevas | MLP + L2 (α=0,1)": {
+   "pos_test": [
+    15.85,
+    11.591
+   ],
+   "precision": [
+    0.474,
+    0.213
+   ],
+   "recall": [
+    0.659,
+    0.237
+   ],
+   "f1": [
+    0.531,
+    0.216
+   ],
+   "pr_auc": [
+    0.681,
+    0.228
+   ],
+   "folds_validos": 20
+  },
+  "Provincias nuevas | Regresión logística": {
+   "pos_test": [
+    15.85,
+    11.591
+   ],
+   "precision": [
+    0.139,
+    0.084
+   ],
+   "recall": [
+    0.557,
+    0.218
+   ],
+   "f1": [
+    0.205,
+    0.107
+   ],
+   "pr_auc": [
+    0.309,
+    0.185
+   ],
+   "folds_validos": 20
+  }
+ },
+ "auditoria": {
+  "casos": 56,
+  "triage": {
+   "TAMAÑO": 11,
+   "SIN EXPLICACIÓN SIMPLE": 10,
+   "POCO DATO": 8,
+   "CAÍDA/COBERTURA PARCIAL": 8,
+   "INDICADOR CASI CONSTANTE (IESS SSC)": 7,
+   "INDICADOR CASI CONSTANTE (IESS SSC) + POCO DATO": 7,
+   "CAÍDA/COBERTURA PARCIAL + POCO DATO": 4,
+   "TAMAÑO + POCO DATO": 1
+  },
+  "con_alguna_etiqueta_tamano": 12,
+  "con_cobertura_parcial": 12,
+  "con_salto": 0,
+  "con_iess_constante": 14,
+  "con_poco_dato": 20,
+  "sin_explicacion": 10,
+  "top30_en_3_ciudades": 15
+ },
+ "iess_constante": {
+  "2021": {
+   "cantones con dato": 206.0,
+   "valores distintos": 5.0,
+   "mínimo": 216.0,
+   "mediana": 226.0,
+   "máximo": 452.0,
+   "valor modal": 226.0,
+   "% de cantones en el valor modal": 95.6
+  },
+  "2022": {
+   "cantones con dato": 206.0,
+   "valores distintos": 4.0,
+   "mínimo": 432.0,
+   "mediana": 456.0,
+   "máximo": 912.0,
+   "valor modal": 456.0,
+   "% de cantones en el valor modal": 97.6
+  },
+  "2023": {
+   "cantones con dato": 208.0,
+   "valores distintos": 4.0,
+   "mínimo": 432.0,
+   "mediana": 456.0,
+   "máximo": 912.0,
+   "valor modal": 456.0,
+   "% de cantones en el valor modal": 97.6
+  },
+  "2024": {
+   "cantones con dato": 208.0,
+   "valores distintos": 4.0,
+   "mínimo": 432.0,
+   "mediana": 456.0,
+   "máximo": 912.0,
+   "valor modal": 456.0,
+   "% de cantones en el valor modal": 97.6
+  },
+  "2025": {
+   "cantones con dato": 211.0,
+   "valores distintos": 9.0,
+   "mínimo": 8.0,
+   "mediana": 418.0,
+   "máximo": 836.0,
+   "valor modal": 418.0,
+   "% de cantones en el valor modal": 94.3
+  },
+  "2026": {
+   "cantones con dato": 208.0,
+   "valores distintos": 5.0,
+   "mínimo": 12.0,
+   "mediana": 228.0,
+   "máximo": 456.0,
+   "valor modal": 228.0,
+   "% de cantones en el valor modal": 96.6
+  }
+ },
+ "sin_iess": {
+  "consenso": 61,
+  "jaccard_consenso": 0.539,
+  "jaccard_top30": 0.5
+ }
+}

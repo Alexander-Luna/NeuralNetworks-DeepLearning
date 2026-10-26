@@ -1,0 +1,595 @@
+{
+  "top30_max_imputado": 0,
+  "top30_inst_imputado": {},
+  "top30_inst_obs": {
+    "STECSDI": 8,
+    "MPCEIP": 6,
+    "PRESIDENCIA": 5,
+    "INPC": 3,
+    "MCYP": 3,
+    "MAATE": 3,
+    "ACESS": 2
+  },
+  "reproduccion": {
+    "v2": [
+      700,
+      7,
+      82.3
+    ],
+    "v3": [
+      1284,
+      4,
+      79.4
+    ]
+  },
+  "configuracion_elegida": {
+    "ventana": "2021-2025",
+    "umbral_ind": 0.25,
+    "umbral_fila": 0.4,
+    "filas": 807,
+    "indicadores": 10,
+    "instituciones": 8,
+    "densidad": 62.0,
+    "celdas_obs": 5000,
+    "cumple": true
+  },
+  "n_configuraciones_que_cumplen": 48,
+  "indicadores_contenido": 20,
+  "indicadores_control": [
+    "IESS · Encuesta Seguro Social Campesino"
+  ],
+  "indicadores_elegida": [
+    "ACESS · Permisos de funcionamiento",
+    "INPC · Patrimonio cultural inmaterial",
+    "MCYP · RUAC artistas y gestores",
+    "MPCEIP · Inspección de control posterior",
+    "MREMH · Movilidad humana: vulnerabilidades",
+    "MAATE · Superficie bajo conservación",
+    "MAATE · Volumen forestal unidades móviles",
+    "PRESIDENCIA · Atención ciudadana",
+    "STECSDI · Gestantes en programas MIES",
+    "STECSDI · Menores de 24 meses con alerta"
+  ],
+  "indicadores_v3_tasas": [
+    "ACESS · Permisos de funcionamiento",
+    "INPC · Patrimonio cultural inmaterial",
+    "MCYP · RUAC artistas y gestores"
+  ],
+  "modelos": {
+    "v3_tasas": {
+      "matriz": [
+        1300,
+        3
+      ],
+      "cantones": 218,
+      "densidad": 73.1,
+      "consenso_2de3": 53,
+      "corr_S_cobertura": 0.011,
+      "corr_S_poblacion": 0.198,
+      "jaccard_semillas": [
+        0.892,
+        0.765
+      ],
+      "jaccard_submuestras": [
+        0.76,
+        0.622
+      ],
+      "jaccard_top30_vs_baseline": 0.429,
+      "filas_elegibles": 1300,
+      "top30_quito_gye_cuenca": 1,
+      "top30_cantones_distintos": 21
+    },
+    "elegida_historia": {
+      "matriz": [
+        807,
+        10
+      ],
+      "cantones": 218,
+      "densidad": 62.0,
+      "consenso_2de3": 36,
+      "corr_S_cobertura": 0.1,
+      "corr_S_poblacion": 0.08,
+      "jaccard_semillas": [
+        0.851,
+        0.765
+      ],
+      "jaccard_submuestras": [
+        0.729,
+        0.667
+      ],
+      "jaccard_top30_vs_baseline": 0.224,
+      "filas_elegibles": 807,
+      "top30_quito_gye_cuenca": 0,
+      "top30_cantones_distintos": 19,
+      "top30_dominante_imputado": 15
+    },
+    "elegida_neutra": {
+      "matriz": [
+        807,
+        10
+      ],
+      "cantones": 218,
+      "densidad": 62.0,
+      "consenso_2de3": 33,
+      "corr_S_cobertura": 0.492,
+      "corr_S_poblacion": 0.055,
+      "jaccard_semillas": [
+        0.924,
+        0.818
+      ],
+      "jaccard_submuestras": [
+        0.761,
+        0.579
+      ],
+      "jaccard_top30_vs_baseline": 0.333,
+      "filas_elegibles": 807,
+      "top30_quito_gye_cuenca": 0,
+      "top30_cantones_distintos": 26,
+      "top30_dominante_imputado": 0,
+      "jaccard_top30_vs_historia": 0.154
+    },
+    "elegida": {
+      "matriz": [
+        807,
+        10
+      ],
+      "cantones": 218,
+      "densidad": 62.0,
+      "consenso_2de3": 36,
+      "corr_S_cobertura": 0.1,
+      "corr_S_poblacion": 0.08,
+      "jaccard_semillas": [
+        0.834,
+        0.714
+      ],
+      "jaccard_submuestras": [
+        0.746,
+        0.622
+      ],
+      "jaccard_top30_vs_baseline": 0.25,
+      "filas_elegibles": 551,
+      "top30_quito_gye_cuenca": 0,
+      "top30_cantones_distintos": 25,
+      "top30_dominante_imputado": 0,
+      "jaccard_top30_vs_historia": 0.333
+    }
+  },
+  "inyeccion": {
+    "A": {
+      "S_ens": {
+        "recall5": 0.582,
+        "sd": 0.075,
+        "p30": 0.502
+      },
+      "Baseline": {
+        "recall5": 0.65,
+        "sd": 0.045,
+        "p30": 0.56
+      }
+    },
+    "B": {
+      "S_ens": {
+        "recall5": 0.458,
+        "sd": 0.082,
+        "p30": 0.39
+      },
+      "Baseline": {
+        "recall5": 0.198,
+        "sd": 0.043,
+        "p30": 0.172
+      }
+    }
+  },
+  "r5": {
+    "violaciones_total": 0,
+    "filas_canton_anio": 0,
+    "en_matriz_elegida": 0,
+    "capacidad_umbral": 50,
+    "recall_consenso": null,
+    "recall_top5pct_S": null,
+    "recall_top5pct_base": null
+  },
+  "r5_por_indicador": [
+    {
+      "ind": "i02",
+      "filas": 216,
+      "violaciones": 0,
+      "max_razon": 0.06,
+      "indicador": "CONADIS · Registro nacional de discapacidades"
+    },
+    {
+      "ind": "i13",
+      "filas": 1004,
+      "violaciones": 0,
+      "max_razon": 0.03,
+      "indicador": "MCYP · RUAC artistas y gestores"
+    },
+    {
+      "ind": "i14",
+      "filas": 41,
+      "violaciones": 0,
+      "max_razon": 0.03,
+      "indicador": "MIDENA · Servicio cívico militar"
+    },
+    {
+      "ind": "i16",
+      "filas": 564,
+      "violaciones": 0,
+      "max_razon": 0.01,
+      "indicador": "MREMH · Movilidad humana: vulnerabilidades"
+    },
+    {
+      "ind": "i21",
+      "filas": 699,
+      "violaciones": 0,
+      "max_razon": 0.0,
+      "indicador": "PRESIDENCIA · Atención ciudadana"
+    },
+    {
+      "ind": "i23",
+      "filas": 29,
+      "violaciones": 0,
+      "max_razon": 0.02,
+      "indicador": "RC · Firma electrónica"
+    },
+    {
+      "ind": "i25",
+      "filas": 429,
+      "violaciones": 0,
+      "max_razon": 0.03,
+      "indicador": "STECSDI · Gestantes en programas MIES"
+    },
+    {
+      "ind": "i26",
+      "filas": 430,
+      "violaciones": 0,
+      "max_razon": 0.05,
+      "indicador": "STECSDI · Menores de 24 meses con alerta"
+    },
+    {
+      "ind": "i27",
+      "filas": 407,
+      "violaciones": 0,
+      "max_razon": 0.06,
+      "indicador": "SDH · Registros de atención"
+    }
+  ],
+  "diagnostico": [
+    {
+      "id": "i01",
+      "inst": "ACESS",
+      "nombre": "Permisos de funcionamiento",
+      "tipo": "personas_no",
+      "anios": 4,
+      "filas": 863,
+      "rho_conteo_pob": 0.773,
+      "rho_tasa_pob": -0.069,
+      "pct_valor_modal": 5.569,
+      "control_publicacion": false
+    },
+    {
+      "id": "i02",
+      "inst": "CONADIS",
+      "nombre": "Registro nacional de discapacidades",
+      "tipo": "personas",
+      "anios": 1,
+      "filas": 216,
+      "rho_conteo_pob": 0.868,
+      "rho_tasa_pob": -0.781,
+      "pct_valor_modal": 1.389,
+      "control_publicacion": false
+    },
+    {
+      "id": "i03",
+      "inst": "IESS",
+      "nombre": "Encuesta Seguro Social Campesino",
+      "tipo": "control",
+      "anios": 6,
+      "filas": 1256,
+      "rho_conteo_pob": -0.002,
+      "rho_tasa_pob": -0.95,
+      "pct_valor_modal": 96.911,
+      "control_publicacion": true
+    },
+    {
+      "id": "i04",
+      "inst": "INEC",
+      "nombre": "Siniestros de tránsito 2019",
+      "tipo": "personas_no",
+      "anios": 1,
+      "filas": 171,
+      "rho_conteo_pob": 0.773,
+      "rho_tasa_pob": 0.214,
+      "pct_valor_modal": 6.433,
+      "control_publicacion": false
+    },
+    {
+      "id": "i05",
+      "inst": "INPC",
+      "nombre": "Patrimonio cultural inmaterial",
+      "tipo": "personas_no",
+      "anios": 5,
+      "filas": 982,
+      "rho_conteo_pob": 0.145,
+      "rho_tasa_pob": -0.516,
+      "pct_valor_modal": 6.599,
+      "control_publicacion": false
+    },
+    {
+      "id": "i06",
+      "inst": "MAG",
+      "nombre": "Precios, mercados mayoristas",
+      "tipo": "precio",
+      "anios": 1,
+      "filas": 21,
+      "rho_conteo_pob": 0.797,
+      "rho_tasa_pob": -0.297,
+      "pct_valor_modal": 4.762,
+      "control_publicacion": false
+    },
+    {
+      "id": "i07",
+      "inst": "MAG",
+      "nombre": "Precios, extractoras de aceite",
+      "tipo": "precio",
+      "anios": 4,
+      "filas": 32,
+      "rho_conteo_pob": 0.043,
+      "rho_tasa_pob": -0.787,
+      "pct_valor_modal": 12.5,
+      "control_publicacion": false
+    },
+    {
+      "id": "i08",
+      "inst": "MAG",
+      "nombre": "Precios, acopio de granos",
+      "tipo": "precio",
+      "anios": 4,
+      "filas": 201,
+      "rho_conteo_pob": -0.039,
+      "rho_tasa_pob": -0.497,
+      "pct_valor_modal": 9.434,
+      "control_publicacion": false
+    },
+    {
+      "id": "i09",
+      "inst": "MAG",
+      "nombre": "Precios, acopio de cacao",
+      "tipo": "precio",
+      "anios": 4,
+      "filas": 260,
+      "rho_conteo_pob": 0.419,
+      "rho_tasa_pob": -0.432,
+      "pct_valor_modal": 3.886,
+      "control_publicacion": false
+    },
+    {
+      "id": "i10",
+      "inst": "MAG",
+      "nombre": "Precios, molinos empresariales",
+      "tipo": "precio",
+      "anios": 4,
+      "filas": 24,
+      "rho_conteo_pob": -0.208,
+      "rho_tasa_pob": -0.911,
+      "pct_valor_modal": 16.667,
+      "control_publicacion": false
+    },
+    {
+      "id": "i11",
+      "inst": "MAG",
+      "nombre": "Precios, piladoras",
+      "tipo": "precio",
+      "anios": 4,
+      "filas": 128,
+      "rho_conteo_pob": -0.04,
+      "rho_tasa_pob": -0.696,
+      "pct_valor_modal": 3.125,
+      "control_publicacion": false
+    },
+    {
+      "id": "i12",
+      "inst": "MAG",
+      "nombre": "Precios, acopio de café",
+      "tipo": "precio",
+      "anios": 4,
+      "filas": 115,
+      "rho_conteo_pob": -0.055,
+      "rho_tasa_pob": -0.703,
+      "pct_valor_modal": 8.744,
+      "control_publicacion": false
+    },
+    {
+      "id": "i13",
+      "inst": "MCYP",
+      "nombre": "RUAC artistas y gestores",
+      "tipo": "personas",
+      "anios": 5,
+      "filas": 1004,
+      "rho_conteo_pob": 0.694,
+      "rho_tasa_pob": 0.151,
+      "pct_valor_modal": 8.458,
+      "control_publicacion": false
+    },
+    {
+      "id": "i14",
+      "inst": "MIDENA",
+      "nombre": "Servicio cívico militar",
+      "tipo": "personas",
+      "anios": 2,
+      "filas": 41,
+      "rho_conteo_pob": 0.336,
+      "rho_tasa_pob": -0.562,
+      "pct_valor_modal": 7.536,
+      "control_publicacion": false
+    },
+    {
+      "id": "i15",
+      "inst": "MPCEIP",
+      "nombre": "Inspección de control posterior",
+      "tipo": "personas_no",
+      "anios": 4,
+      "filas": 303,
+      "rho_conteo_pob": 0.54,
+      "rho_tasa_pob": -0.227,
+      "pct_valor_modal": 6.579,
+      "control_publicacion": false
+    },
+    {
+      "id": "i16",
+      "inst": "MREMH",
+      "nombre": "Movilidad humana: vulnerabilidades",
+      "tipo": "personas",
+      "anios": 3,
+      "filas": 564,
+      "rho_conteo_pob": 0.599,
+      "rho_tasa_pob": -0.16,
+      "pct_valor_modal": 6.771,
+      "control_publicacion": false
+    },
+    {
+      "id": "i17",
+      "inst": "MAATE",
+      "nombre": "Focos de calor",
+      "tipo": "personas_no",
+      "anios": 1,
+      "filas": 192,
+      "rho_conteo_pob": 0.285,
+      "rho_tasa_pob": -0.271,
+      "pct_valor_modal": 7.292,
+      "control_publicacion": false
+    },
+    {
+      "id": "i18",
+      "inst": "MAATE",
+      "nombre": "Superficie bajo conservación",
+      "tipo": "personas_no",
+      "anios": 2,
+      "filas": 376,
+      "rho_conteo_pob": 0.234,
+      "rho_tasa_pob": -0.604,
+      "pct_valor_modal": 5.851,
+      "control_publicacion": false
+    },
+    {
+      "id": "i19",
+      "inst": "MAATE",
+      "nombre": "Volumen forestal destino final",
+      "tipo": "personas_no",
+      "anios": 1,
+      "filas": 194,
+      "rho_conteo_pob": 0.597,
+      "rho_tasa_pob": -0.049,
+      "pct_valor_modal": 3.093,
+      "control_publicacion": false
+    },
+    {
+      "id": "i20",
+      "inst": "MAATE",
+      "nombre": "Volumen forestal unidades móviles",
+      "tipo": "personas_no",
+      "anios": 3,
+      "filas": 516,
+      "rho_conteo_pob": 0.549,
+      "rho_tasa_pob": -0.03,
+      "pct_valor_modal": 8.475,
+      "control_publicacion": false
+    },
+    {
+      "id": "i21",
+      "inst": "PRESIDENCIA",
+      "nombre": "Atención ciudadana",
+      "tipo": "personas",
+      "anios": 4,
+      "filas": 699,
+      "rho_conteo_pob": 0.71,
+      "rho_tasa_pob": -0.028,
+      "pct_valor_modal": 16.071,
+      "control_publicacion": false
+    },
+    {
+      "id": "i22",
+      "inst": "RC",
+      "nombre": "Base transaccional SIR",
+      "tipo": "personas_no",
+      "anios": 1,
+      "filas": 160,
+      "rho_conteo_pob": 0.737,
+      "rho_tasa_pob": -0.823,
+      "pct_valor_modal": 5.625,
+      "control_publicacion": false
+    },
+    {
+      "id": "i23",
+      "inst": "RC",
+      "nombre": "Firma electrónica",
+      "tipo": "personas",
+      "anios": 1,
+      "filas": 29,
+      "rho_conteo_pob": 0.834,
+      "rho_tasa_pob": -0.732,
+      "pct_valor_modal": 6.897,
+      "control_publicacion": false
+    },
+    {
+      "id": "i24",
+      "inst": "RC",
+      "nombre": "Certificados en agencias",
+      "tipo": "personas_no",
+      "anios": 1,
+      "filas": 160,
+      "rho_conteo_pob": 0.823,
+      "rho_tasa_pob": -0.864,
+      "pct_valor_modal": 1.875,
+      "control_publicacion": false
+    },
+    {
+      "id": "i25",
+      "inst": "STECSDI",
+      "nombre": "Gestantes en programas MIES",
+      "tipo": "personas",
+      "anios": 2,
+      "filas": 429,
+      "rho_conteo_pob": 0.899,
+      "rho_tasa_pob": -0.037,
+      "pct_valor_modal": 1.866,
+      "control_publicacion": false
+    },
+    {
+      "id": "i26",
+      "inst": "STECSDI",
+      "nombre": "Menores de 24 meses con alerta",
+      "tipo": "personas",
+      "anios": 2,
+      "filas": 430,
+      "rho_conteo_pob": 0.901,
+      "rho_tasa_pob": -0.019,
+      "pct_valor_modal": 1.395,
+      "control_publicacion": false
+    },
+    {
+      "id": "i27",
+      "inst": "SDH",
+      "nombre": "Registros de atención",
+      "tipo": "personas",
+      "anios": 2,
+      "filas": 407,
+      "rho_conteo_pob": 0.558,
+      "rho_tasa_pob": -0.072,
+      "pct_valor_modal": 4.182,
+      "control_publicacion": false
+    },
+    {
+      "id": "i28",
+      "inst": "ECU911",
+      "nombre": "Emergencias",
+      "tipo": "personas_no",
+      "anios": 1,
+      "filas": 214,
+      "rho_conteo_pob": 0.887,
+      "rho_tasa_pob": 0.128,
+      "pct_valor_modal": 1.402,
+      "control_publicacion": false
+    }
+  ]
+}

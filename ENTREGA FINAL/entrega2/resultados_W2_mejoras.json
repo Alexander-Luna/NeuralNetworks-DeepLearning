@@ -1,0 +1,384 @@
+{
+ "reglas_distintas": [
+  {
+   "familia_probada": "edit",
+   "prueba": "misma regla",
+   "metodo": "BiGRU",
+   "n": 1052,
+   "acc": 0.9809885931558935,
+   "precision": 0.9851580053634849,
+   "recall": 0.9801750380517505,
+   "f1": 0.9793314036666173
+  },
+  {
+   "familia_probada": "edit",
+   "prueba": "misma regla",
+   "metodo": "Distancia de edición",
+   "n": 1052,
+   "acc": 0.8726235741444867,
+   "precision": 0.9336100506612404,
+   "recall": 0.835696444600554,
+   "f1": 0.8609213110053947
+  },
+  {
+   "familia_probada": "edit",
+   "prueba": "misma regla",
+   "metodo": "Cascada",
+   "n": 1052,
+   "acc": 0.9838403041825095,
+   "precision": 0.9866528955570051,
+   "recall": 0.9839802130898022,
+   "f1": 0.9837732327659806
+  },
+  {
+   "familia_probada": "edit",
+   "prueba": "regla nueva",
+   "metodo": "BiGRU",
+   "n": 14715,
+   "acc": 0.800815494393476,
+   "precision": 0.7978003249989418,
+   "recall": 0.7830218576032371,
+   "f1": 0.7850873070198938
+  },
+  {
+   "familia_probada": "edit",
+   "prueba": "regla nueva",
+   "metodo": "Distancia de edición",
+   "n": 14715,
+   "acc": 0.9966700645599729,
+   "precision": 0.9963382716457176,
+   "recall": 0.9965628899452598,
+   "f1": 0.9963411188086423
+  },
+  {
+   "familia_probada": "edit",
+   "prueba": "regla nueva",
+   "metodo": "Cascada",
+   "n": 14715,
+   "acc": 0.928644240570846,
+   "precision": 0.9292344674952953,
+   "recall": 0.927692149006783,
+   "f1": 0.9258969345213026
+  },
+  {
+   "familia_probada": "espacio",
+   "prueba": "misma regla",
+   "metodo": "BiGRU",
+   "n": 1862,
+   "acc": 0.9758324382384532,
+   "precision": 0.9752011433518284,
+   "recall": 0.9730556353844024,
+   "f1": 0.9717842107759384
+  },
+  {
+   "familia_probada": "espacio",
+   "prueba": "misma regla",
+   "metodo": "Distancia de edición",
+   "n": 1862,
+   "acc": 0.9366272824919442,
+   "precision": 0.967570096325804,
+   "recall": 0.9232588314780097,
+   "f1": 0.9363909425020254
+  },
+  {
+   "familia_probada": "espacio",
+   "prueba": "misma regla",
+   "metodo": "Cascada",
+   "n": 1862,
+   "acc": 0.9887218045112782,
+   "precision": 0.9884485250923607,
+   "recall": 0.9891553651827625,
+   "f1": 0.9878345795313946
+  },
+  {
+   "familia_probada": "espacio",
+   "prueba": "regla nueva",
+   "metodo": "BiGRU",
+   "n": 1990,
+   "acc": 1.0,
+   "precision": 0.9726027397260274,
+   "recall": 0.9726027397260274,
+   "f1": 0.9726027397260274
+  },
+  {
+   "familia_probada": "espacio",
+   "prueba": "regla nueva",
+   "metodo": "Distancia de edición",
+   "n": 1990,
+   "acc": 1.0,
+   "precision": 0.9726027397260274,
+   "recall": 0.9726027397260274,
+   "f1": 0.9726027397260274
+  },
+  {
+   "familia_probada": "espacio",
+   "prueba": "regla nueva",
+   "metodo": "Cascada",
+   "n": 1990,
+   "acc": 1.0,
+   "precision": 0.9726027397260274,
+   "recall": 0.9726027397260274,
+   "f1": 0.9726027397260274
+  },
+  {
+   "familia_probada": "codif",
+   "prueba": "misma regla",
+   "metodo": "BiGRU",
+   "n": 1839,
+   "acc": 0.9651984774333877,
+   "precision": 0.9688513731321949,
+   "recall": 0.9638324765037095,
+   "f1": 0.9636797450726257
+  },
+  {
+   "familia_probada": "codif",
+   "prueba": "misma regla",
+   "metodo": "Distancia de edición",
+   "n": 1839,
+   "acc": 0.9314845024469821,
+   "precision": 0.9646397277443776,
+   "recall": 0.9155933741550178,
+   "f1": 0.9311242184882086
+  },
+  {
+   "familia_probada": "codif",
+   "prueba": "misma regla",
+   "metodo": "Cascada",
+   "n": 1839,
+   "acc": 0.9771615008156607,
+   "precision": 0.9789637049911023,
+   "recall": 0.9776195012496383,
+   "f1": 0.9767864691491122
+  },
+  {
+   "familia_probada": "codif",
+   "prueba": "regla nueva",
+   "metodo": "BiGRU",
+   "n": 3714,
+   "acc": 0.9127625201938611,
+   "precision": 0.8938131801444994,
+   "recall": 0.9038834429461003,
+   "f1": 0.8845182366834232
+  },
+  {
+   "familia_probada": "codif",
+   "prueba": "regla nueva",
+   "metodo": "Distancia de edición",
+   "n": 3714,
+   "acc": 0.998115239633818,
+   "precision": 0.9953576864535769,
+   "recall": 0.9978156656689461,
+   "f1": 0.9961235630426718
+  },
+  {
+   "familia_probada": "codif",
+   "prueba": "regla nueva",
+   "metodo": "Cascada",
+   "n": 3714,
+   "acc": 0.938610662358643,
+   "precision": 0.9252025695575619,
+   "recall": 0.9437125289359994,
+   "f1": 0.9248315336928918
+  },
+  {
+   "familia_probada": "abrev",
+   "prueba": "misma regla",
+   "metodo": "BiGRU",
+   "n": 1787,
+   "acc": 0.9764969222160045,
+   "precision": 0.9752557817626312,
+   "recall": 0.9730023868091641,
+   "f1": 0.9723532134049503
+  },
+  {
+   "familia_probada": "abrev",
+   "prueba": "misma regla",
+   "metodo": "Distancia de edición",
+   "n": 1787,
+   "acc": 0.9390039171796307,
+   "precision": 0.9727429973861121,
+   "recall": 0.924138291946511,
+   "f1": 0.9401019971933969
+  },
+  {
+   "familia_probada": "abrev",
+   "prueba": "misma regla",
+   "metodo": "Cascada",
+   "n": 1787,
+   "acc": 0.9860100727476218,
+   "precision": 0.9845735188200943,
+   "recall": 0.9840186576487946,
+   "f1": 0.9831967574836071
+  },
+  {
+   "familia_probada": "abrev",
+   "prueba": "regla nueva",
+   "metodo": "BiGRU",
+   "n": 1666,
+   "acc": 0.8871548619447779,
+   "precision": 0.6817162574148923,
+   "recall": 0.6894191068031957,
+   "f1": 0.6729691164959051
+  },
+  {
+   "familia_probada": "abrev",
+   "prueba": "regla nueva",
+   "metodo": "Distancia de edición",
+   "n": 1666,
+   "acc": 0.9945978391356542,
+   "precision": 0.7904843444227005,
+   "recall": 0.7919008312843929,
+   "f1": 0.7896299629944434
+  },
+  {
+   "familia_probada": "abrev",
+   "prueba": "regla nueva",
+   "metodo": "Cascada",
+   "n": 1666,
+   "acc": 0.9177671068427371,
+   "precision": 0.7082114925467728,
+   "recall": 0.7140803534312864,
+   "f1": 0.7015510442334988
+  },
+  {
+   "familia_probada": "tokens",
+   "prueba": "misma regla",
+   "metodo": "BiGRU",
+   "n": 1700,
+   "acc": 0.9764705882352941,
+   "precision": 0.9782781145794844,
+   "recall": 0.9738949153332714,
+   "f1": 0.9740960262788456
+  },
+  {
+   "familia_probada": "tokens",
+   "prueba": "misma regla",
+   "metodo": "Distancia de edición",
+   "n": 1700,
+   "acc": 0.9976470588235294,
+   "precision": 0.9972095383054287,
+   "recall": 0.9983510908168444,
+   "f1": 0.997544526500838
+  },
+  {
+   "familia_probada": "tokens",
+   "prueba": "misma regla",
+   "metodo": "Cascada",
+   "n": 1700,
+   "acc": 0.99,
+   "precision": 0.989967300583739,
+   "recall": 0.9895609717527527,
+   "f1": 0.9888322387049054
+  },
+  {
+   "familia_probada": "tokens",
+   "prueba": "regla nueva",
+   "metodo": "BiGRU",
+   "n": 2949,
+   "acc": 0.2546625974906748,
+   "precision": 0.461153655230449,
+   "recall": 0.21998021886483543,
+   "f1": 0.21401568464999388
+  },
+  {
+   "familia_probada": "tokens",
+   "prueba": "regla nueva",
+   "metodo": "Distancia de edición",
+   "n": 2949,
+   "acc": 0.4845710410308579,
+   "precision": 0.8489842113539443,
+   "recall": 0.4466620986267543,
+   "f1": 0.5187639017638396
+  },
+  {
+   "familia_probada": "tokens",
+   "prueba": "regla nueva",
+   "metodo": "Cascada",
+   "n": 2949,
+   "acc": 0.25805357748389285,
+   "precision": 0.46217701560048674,
+   "recall": 0.22209154741452017,
+   "f1": 0.2161268018530913
+  }
+ ],
+ "resumen": {
+  "misma regla | BiGRU": {
+   "acc": 0.975,
+   "f1": 0.972
+  },
+  "misma regla | Cascada": {
+   "acc": 0.985,
+   "f1": 0.984
+  },
+  "misma regla | Distancia de edición": {
+   "acc": 0.935,
+   "f1": 0.933
+  },
+  "regla nueva | BiGRU": {
+   "acc": 0.771,
+   "f1": 0.706
+  },
+  "regla nueva | Cascada": {
+   "acc": 0.809,
+   "f1": 0.748
+  },
+  "regla nueva | Distancia de edición": {
+   "acc": 0.895,
+   "f1": 0.855
+  }
+ },
+ "mcnemar": [
+  {
+   "familia": "edit",
+   "solo_red": 24,
+   "solo_distancia": 2906,
+   "p_valor": 0.0
+  },
+  {
+   "familia": "espacio",
+   "solo_red": 0,
+   "solo_distancia": 0,
+   "p_valor": 1.0
+  },
+  {
+   "familia": "codif",
+   "solo_red": 1,
+   "solo_distancia": 318,
+   "p_valor": 0.0
+  },
+  {
+   "familia": "abrev",
+   "solo_red": 4,
+   "solo_distancia": 183,
+   "p_valor": 0.0
+  },
+  {
+   "familia": "tokens",
+   "solo_red": 125,
+   "solo_distancia": 803,
+   "p_valor": 0.0
+  }
+ ],
+ "real_ic": [
+  {
+   "metodo": "Distancia de edición",
+   "aciertos": "38/38",
+   "ic95_inf": 0.908,
+   "ic95_sup": 1.0
+  },
+  {
+   "metodo": "BiGRU",
+   "aciertos": "38/38",
+   "ic95_inf": 0.908,
+   "ic95_sup": 1.0
+  },
+  {
+   "metodo": "Transformer",
+   "aciertos": "36/38",
+   "ic95_inf": 0.827,
+   "ic95_sup": 0.985
+  }
+ ],
+ "n_necesario": 729,
+ "umbral_cascada": 0.8
+}

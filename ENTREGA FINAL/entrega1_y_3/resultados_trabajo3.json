@@ -1,0 +1,469 @@
+{
+ "tabla": {
+  "Filas al azar | MLP desde cero": {
+   "precision": [
+    0.358,
+    0.185
+   ],
+   "recall": [
+    0.356,
+    0.272
+   ],
+   "f1": [
+    0.338,
+    0.2
+   ],
+   "pr_auc": [
+    0.362,
+    0.217
+   ],
+   "segundos": [
+    0.751,
+    0.116
+   ]
+  },
+  "Filas al azar | Regresión logística": {
+   "precision": [
+    0.089,
+    0.058
+   ],
+   "recall": [
+    0.524,
+    0.326
+   ],
+   "f1": [
+    0.15,
+    0.095
+   ],
+   "pr_auc": [
+    0.247,
+    0.156
+   ],
+   "segundos": [
+    0.006,
+    0.001
+   ]
+  },
+  "Filas al azar | TabPFN transfer (pesos congelados)": {
+   "precision": [
+    0.626,
+    0.396
+   ],
+   "recall": [
+    0.32,
+    0.222
+   ],
+   "f1": [
+    0.417,
+    0.275
+   ],
+   "pr_auc": [
+    0.664,
+    0.149
+   ],
+   "segundos": [
+    3.464,
+    0.263
+   ]
+  },
+  "Filas al azar | TabPFN mismo preproc. (control)": {
+   "precision": [
+    0.648,
+    0.444
+   ],
+   "recall": [
+    0.292,
+    0.215
+   ],
+   "f1": [
+    0.394,
+    0.282
+   ],
+   "pr_auc": [
+    0.63,
+    0.164
+   ],
+   "segundos": [
+    0.389,
+    0.05
+   ]
+  },
+  "Filas al azar | TabPFN fine-tuning": {
+   "precision": [
+    0.551,
+    0.26
+   ],
+   "recall": [
+    0.643,
+    0.229
+   ],
+   "f1": [
+    0.558,
+    0.194
+   ],
+   "pr_auc": [
+    0.703,
+    0.192
+   ],
+   "segundos": [
+    23.696,
+    0.657
+   ]
+  },
+  "Cantones nuevos | MLP desde cero": {
+   "precision": [
+    0.555,
+    0.343
+   ],
+   "recall": [
+    0.169,
+    0.113
+   ],
+   "f1": [
+    0.253,
+    0.157
+   ],
+   "pr_auc": [
+    0.456,
+    0.155
+   ],
+   "segundos": [
+    0.695,
+    0.075
+   ]
+  },
+  "Cantones nuevos | Regresión logística": {
+   "precision": [
+    0.179,
+    0.063
+   ],
+   "recall": [
+    0.489,
+    0.22
+   ],
+   "f1": [
+    0.255,
+    0.09
+   ],
+   "pr_auc": [
+    0.257,
+    0.115
+   ],
+   "segundos": [
+    0.006,
+    0.003
+   ]
+  },
+  "Cantones nuevos | TabPFN transfer (pesos congelados)": {
+   "precision": [
+    0.889,
+    0.333
+   ],
+   "recall": [
+    0.355,
+    0.18
+   ],
+   "f1": [
+    0.498,
+    0.226
+   ],
+   "pr_auc": [
+    0.806,
+    0.191
+   ],
+   "segundos": [
+    3.384,
+    0.199
+   ]
+  },
+  "Cantones nuevos | TabPFN mismo preproc. (control)": {
+   "precision": [
+    0.889,
+    0.333
+   ],
+   "recall": [
+    0.322,
+    0.185
+   ],
+   "f1": [
+    0.458,
+    0.233
+   ],
+   "pr_auc": [
+    0.809,
+    0.197
+   ],
+   "segundos": [
+    0.386,
+    0.039
+   ]
+  },
+  "Cantones nuevos | TabPFN fine-tuning": {
+   "precision": [
+    0.79,
+    0.197
+   ],
+   "recall": [
+    0.722,
+    0.208
+   ],
+   "f1": [
+    0.747,
+    0.185
+   ],
+   "pr_auc": [
+    0.878,
+    0.136
+   ],
+   "segundos": [
+    23.805,
+    1.203
+   ]
+  },
+  "Provincias nuevas | MLP desde cero": {
+   "precision": [
+    0.432,
+    0.349
+   ],
+   "recall": [
+    0.258,
+    0.278
+   ],
+   "f1": [
+    0.267,
+    0.214
+   ],
+   "pr_auc": [
+    0.367,
+    0.23
+   ],
+   "segundos": [
+    0.732,
+    0.109
+   ]
+  },
+  "Provincias nuevas | Regresión logística": {
+   "precision": [
+    0.129,
+    0.053
+   ],
+   "recall": [
+    0.504,
+    0.252
+   ],
+   "f1": [
+    0.198,
+    0.075
+   ],
+   "pr_auc": [
+    0.205,
+    0.105
+   ],
+   "segundos": [
+    0.008,
+    0.006
+   ]
+  },
+  "Provincias nuevas | TabPFN transfer (pesos congelados)": {
+   "precision": [
+    0.707,
+    0.355
+   ],
+   "recall": [
+    0.263,
+    0.176
+   ],
+   "f1": [
+    0.366,
+    0.23
+   ],
+   "pr_auc": [
+    0.731,
+    0.173
+   ],
+   "segundos": [
+    3.427,
+    0.174
+   ]
+  },
+  "Provincias nuevas | TabPFN mismo preproc. (control)": {
+   "precision": [
+    0.796,
+    0.36
+   ],
+   "recall": [
+    0.214,
+    0.177
+   ],
+   "f1": [
+    0.31,
+    0.222
+   ],
+   "pr_auc": [
+    0.714,
+    0.165
+   ],
+   "segundos": [
+    0.358,
+    0.018
+   ]
+  },
+  "Provincias nuevas | TabPFN fine-tuning": {
+   "precision": [
+    0.667,
+    0.187
+   ],
+   "recall": [
+    0.727,
+    0.192
+   ],
+   "f1": [
+    0.664,
+    0.104
+   ],
+   "pr_auc": [
+    0.8,
+    0.125
+   ],
+   "segundos": [
+    23.848,
+    1.316
+   ]
+  }
+ },
+ "comparacion": [
+  {
+   "esquema": "Filas al azar",
+   "metrica": "f1",
+   "modelo": "TabPFN transfer (pesos congelados)",
+   "dif_vs_MLP": 0.08,
+   "ic95": "[-0.034, 0.184]"
+  },
+  {
+   "esquema": "Filas al azar",
+   "metrica": "f1",
+   "modelo": "TabPFN fine-tuning",
+   "dif_vs_MLP": 0.221,
+   "ic95": "[0.070, 0.370]"
+  },
+  {
+   "esquema": "Filas al azar",
+   "metrica": "pr_auc",
+   "modelo": "TabPFN transfer (pesos congelados)",
+   "dif_vs_MLP": 0.302,
+   "ic95": "[0.176, 0.428]"
+  },
+  {
+   "esquema": "Filas al azar",
+   "metrica": "pr_auc",
+   "modelo": "TabPFN fine-tuning",
+   "dif_vs_MLP": 0.341,
+   "ic95": "[0.200, 0.485]"
+  },
+  {
+   "esquema": "Cantones nuevos",
+   "metrica": "f1",
+   "modelo": "TabPFN transfer (pesos congelados)",
+   "dif_vs_MLP": 0.246,
+   "ic95": "[0.124, 0.374]"
+  },
+  {
+   "esquema": "Cantones nuevos",
+   "metrica": "f1",
+   "modelo": "TabPFN fine-tuning",
+   "dif_vs_MLP": 0.494,
+   "ic95": "[0.414, 0.571]"
+  },
+  {
+   "esquema": "Cantones nuevos",
+   "metrica": "pr_auc",
+   "modelo": "TabPFN transfer (pesos congelados)",
+   "dif_vs_MLP": 0.35,
+   "ic95": "[0.305, 0.392]"
+  },
+  {
+   "esquema": "Cantones nuevos",
+   "metrica": "pr_auc",
+   "modelo": "TabPFN fine-tuning",
+   "dif_vs_MLP": 0.423,
+   "ic95": "[0.370, 0.471]"
+  },
+  {
+   "esquema": "Provincias nuevas",
+   "metrica": "f1",
+   "modelo": "TabPFN transfer (pesos congelados)",
+   "dif_vs_MLP": 0.099,
+   "ic95": "[0.027, 0.182]"
+  },
+  {
+   "esquema": "Provincias nuevas",
+   "metrica": "f1",
+   "modelo": "TabPFN fine-tuning",
+   "dif_vs_MLP": 0.397,
+   "ic95": "[0.276, 0.515]"
+  },
+  {
+   "esquema": "Provincias nuevas",
+   "metrica": "pr_auc",
+   "modelo": "TabPFN transfer (pesos congelados)",
+   "dif_vs_MLP": 0.365,
+   "ic95": "[0.244, 0.497]"
+  },
+  {
+   "esquema": "Provincias nuevas",
+   "metrica": "pr_auc",
+   "modelo": "TabPFN fine-tuning",
+   "dif_vs_MLP": 0.433,
+   "ic95": "[0.313, 0.560]"
+  }
+ ],
+ "n_param": 25821706,
+ "n_libres": 4741130,
+ "perdida_ini_fin": [
+  0.237,
+  0.144
+ ],
+ "shap": {
+  "importancia": {
+   "STECSDI · Menores de 24 meses con alerta": 0.0921,
+   "STECSDI · Gestantes en programas MIES": 0.0689,
+   "MCYP · RUAC artistas y gestores": 0.0541,
+   "INPC · Patrimonio cultural inmaterial": 0.0523,
+   "MAATE · Volumen forestal unidades móviles": 0.0382,
+   "ACESS · Permisos de funcionamiento": 0.0376,
+   "MPCEIP · Inspección de control posterior": 0.0346,
+   "MREMH · Movilidad humana: vulnerabilidades": 0.0325,
+   "MAATE · Superficie bajo conservación": 0.0321,
+   "PRESIDENCIA · Atención ciudadana": 0.028
+  },
+  "coincidencia_max_z": 0.708,
+  "n_anomalias": 24,
+  "dominante_imputado": 0.25,
+  "imputados_caso": [
+   "Permisos funcionamiento (ACESS)",
+   "Movilidad humana (MREMH)",
+   "Gestantes en programas (STECSDI)",
+   "Menores 24 m con alerta (STECSDI)"
+  ],
+  "prob_caso": 0.943,
+  "caso": {
+   "canton": "RUMIÑAHUI",
+   "provincia": "PICHINCHA",
+   "anio": 2022,
+   "shap": {
+    "Permisos funcionamiento (ACESS)": 0.184,
+    "Patrimonio inmaterial (INPC)": -0.009,
+    "Artistas y gestores (MCYP)": -0.003,
+    "Inspecciones control (MPCEIP)": 0.076,
+    "Movilidad humana (MREMH)": -0.007,
+    "Superficie conservación (MAATE)": 0.045,
+    "Volumen forestal (MAATE)": -0.021,
+    "Atención ciudadana (Presidencia)": -0.002,
+    "Gestantes en programas (STECSDI)": 0.31,
+    "Menores 24 m con alerta (STECSDI)": 0.37
+   }
+  }
+ },
+ "filas": 807,
+ "folds": 28
+}

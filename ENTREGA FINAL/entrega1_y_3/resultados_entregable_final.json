@@ -1,0 +1,142 @@
+{
+ "A1_imputador": {
+  "KNN k=5 (antes)": {
+   "RMSE": 1.414,
+   "desv.": 0.079
+  },
+  "Media de la columna": {
+   "RMSE": 1.335,
+   "desv.": 0.063
+  },
+  "Historia del cantón (después)": {
+   "RMSE": 0.737,
+   "desv.": 0.024
+  }
+ },
+ "A2_fuga": {
+  "Con fuga (antes)": {
+   "f1": {
+    "mean": 0.696,
+    "std": 0.083
+   },
+   "pr_auc": {
+    "mean": 0.847,
+    "std": 0.073
+   }
+  },
+  "Sin fuga (después)": {
+   "f1": {
+    "mean": 0.649,
+    "std": 0.138
+   },
+   "pr_auc": {
+    "mean": 0.784,
+    "std": 0.152
+   }
+  }
+ },
+ "A3_generalizacion": {
+  "Filas al azar": {
+   "f1": {
+    "mean": 0.649,
+    "std": 0.138
+   },
+   "pr_auc": {
+    "mean": 0.784,
+    "std": 0.152
+   }
+  },
+  "Cantones nuevos": {
+   "f1": {
+    "mean": 0.634,
+    "std": 0.204
+   },
+   "pr_auc": {
+    "mean": 0.728,
+    "std": 0.221
+   }
+  },
+  "Provincias nuevas": {
+   "f1": {
+    "mean": 0.543,
+    "std": 0.211
+   },
+   "pr_auc": {
+    "mean": 0.628,
+    "std": 0.226
+   }
+  }
+ },
+ "A4_consistencia": {
+  "RMSE KNN k=5": {
+   "JSON entrega MLP": 1.414,
+   "Recalculado aquí": 1.414,
+   "diferencia": 0.0
+  },
+  "RMSE historia del cantón": {
+   "JSON entrega MLP": 0.737,
+   "Recalculado aquí": 0.737,
+   "diferencia": 0.0
+  },
+  "F1 MLP cantones nuevos": {
+   "JSON entrega MLP": 0.628,
+   "Recalculado aquí": 0.634,
+   "diferencia": 0.006
+  }
+ },
+ "B_mejoras_tfm": [
+  {
+   "Cambio": "Normalización por población",
+   "Métrica": "Casos de Quito, Guayaquil o Cuenca en el top-30",
+   "Antes": 15,
+   "Después": 1
+  },
+  {
+   "Cambio": "Matrices de presencia y de valores",
+   "Métrica": "Correlación del puntaje con la cobertura de la fila",
+   "Antes": 0.817,
+   "Después": 0.1
+  },
+  {
+   "Cambio": "Indicador constante (IESS) excluido",
+   "Métrica": "% de cantones con el mismo valor (mediana por año)",
+   "Antes": 97.1,
+   "Después": "fuera del modelo"
+  },
+  {
+   "Cambio": "Ventana de años en el filtro de cobertura",
+   "Métrica": "Indicadores / instituciones en la matriz",
+   "Antes": "4 / 4",
+   "Después": "10 / 8"
+  },
+  {
+   "Cambio": "Filtro de evidencia observada",
+   "Métrica": "Casos del top-30 explicados por un valor imputado",
+   "Antes": 15,
+   "Después": 0
+  },
+  {
+   "Cambio": "Puntaje único S_ens",
+   "Métrica": "Jaccard del top-30 en submuestras del 80 %",
+   "Antes": 0.818,
+   "Después": 0.746
+  }
+ ],
+ "C_transfer": {
+  "MLP desde cero": {
+   "Filas al azar": 0.338,
+   "Cantones nuevos": 0.253,
+   "Provincias nuevas": 0.267
+  },
+  "TabPFN transfer (pesos congelados)": {
+   "Filas al azar": 0.417,
+   "Cantones nuevos": 0.498,
+   "Provincias nuevas": 0.366
+  },
+  "TabPFN fine-tuning": {
+   "Filas al azar": 0.558,
+   "Cantones nuevos": 0.747,
+   "Provincias nuevas": 0.664
+  }
+ }
+}
